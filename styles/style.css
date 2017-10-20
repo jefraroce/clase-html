@@ -1,0 +1,26 @@
+.pagina {
+    width: 100%;
+}
+
+.pagina .menu {
+    float: left;
+    width: 20%;
+    min-width: 120px;
+}
+
+.pagina .contenido {
+    float: left;
+    width: 80%;
+}
+
+.parrafos {
+    color: white;
+    background-color: red;
+    font-size: 20px;
+}
+
+#parrafo_uno {
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+}

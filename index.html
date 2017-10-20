@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Clase HTML.</title>
-        <style>
-            .link{
-                color: white;
-                text-decoration: none;
-                border-right: 1px solid #0B0B61;
-            }
-        </style>
-    </head>
-    <body style="font-family: arial; font-size: 20px; background-color: #D8CEF6;">
-        <div style="margin-left: 100px; margin-right: 100px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white; text-align: center;">
-                Que es HTML
-            </h1>
-            <div style="background-color: #8258FA;" >
-                <a href="contenidos/estructura_pagina.html" class="link" >Estructura HTML</a>
-                <a href="contenidos/elementos.html" class="link" >Elementos</a>
-                <a href="contenidos/etiquetas.html" class="link" >Etiquetas</a>
-                <a href="contenidos/atributos.html" class="link" >Atributos</a>
-                <a href="contenidos/comentarios.html" class="link" >Comentarios</a>
-                <a href="contenidos/propiedades_css.html" class="link" >Propiedades CSS</a>
-                <a href="contenidos/tablas.html" class="link" >Tablas</a>
-            </div>
-            <div>
-                <p>
-                    HTML significa: lenguaje de marcado para hipertexto (HyperText Markup Language), es el lenguaje que se usa para la creación y visualización de página y software web, le indica al navegador como debe mostrar el contenido por medio de elementos que contienen una o más etiquetas.
-                </p>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clase HTML.</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body style="font-family: arial; font-size: 20px; background-color: #D8CEF6;">
+    <div class="pagina">
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="index.html" title="Inicio">Inicio</a></li>
+                <li><a href="contenidos/estructura_pagina.html" title="Estructura HTML">Estructura HTML</a></li>
+                <li><a href="contenidos/elementos.html" title="Elementos">Elementos</a></li>
+                <li>
+                    Etiquetas
+                    <ul>
+                        <li><a href="contenidos/etiquetas/agrupacion_contenido.html" title="Agrupación de Contenido">Agrupación de Contenido</a></li>
+                        <li><a href="contenidos/etiquetas/contenido_incrustado.html" title="Contenido Incrustado">Contenido Incrustado</a></li>
+                        <li><a href="contenidos/etiquetas/metadatos.html" title="Metadatos">Metadatos</a></li>
+                        <li><a href="contenidos/etiquetas/secciones.html" title="Secciones">Secciones</a></li>
+                        <li><a href="contenidos/etiquetas/semantica_texto.html" title="Semantica Texto">Semantica Texto</a></li>
+                    </ul>
+                </li>
+                <li><a href="contenidos/atributos.html" title="Atributos">Atributos</a></li>
+                <li><a href="contenidos/comentarios.html" title="Comentarios">Comentarios</a></li>
+                <li><a href="contenidos/tablas.html" title="Tablas">Tablas</a></li>
+                <li><a href="contenidos/propiedades_css.html" title="Propiedades CSS">Propiedades CSS</a></li>
+            </ul>
+        </div>
+        <div class="contenido">
+            <div style="margin: 50px;">
+                <h1 style="background-color: #142b3b; text-align: center; color: white;">Que es HTML</h1>
                 <div>
-                    <h3>Versiones HTML</h3>
-                    <img src="imagenes/versiones_html.png" alt="Versiones HTML" />
+                    <p>
+                        HTML significa: lenguaje de marcado para hipertexto (HyperText Markup Language), es el lenguaje que se usa para la creación y visualización de página y software web, le indica al navegador como debe mostrar el contenido por medio de elementos que contienen
+                        una o más etiquetas.
+                    </p>
+                    <div>
+                        <h3>Versiones HTML</h3>
+                        <img src="imagenes/versiones_html.png" alt="Versiones HTML" />
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    <footer>
+        <p>© 2017 CoderCo.</p>
+    </footer>
+</body>
+
 </html>
