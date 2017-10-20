@@ -1,34 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Etiquetas HTML</title>
-    </head>
-    <body style="font-family: arial; font-size: 20px; background-color: #80c9c6;">
-        <div style="margin-left: 100px; margin-right: 100px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
-                Etiquetas
-            </h1>
-            <section>
-                <h2 style="background-color: #e47c5d">Secciones</h2>
-                <div>
-                    <h3>Body</h3>
-                    <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Etiquetas HTML</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/default.css">
+    <script type="text/javascript" src="../../javascripts/highlight.pack.js"></script>
+
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body style="font-family: arial; font-size: 20px; background-color: #80c9c6;">
+    <div class="pagina">
+        <div class="menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="../../index.html" title="Inicio">Inicio</a></li>
+                <li><a href="../estructura_pagina.html" title="Estructura HTML">Estructura HTML</a></li>
+                <li><a href="../elementos.html" title="Elementos">Elementos</a></li>
+                <li>
+                    Etiquetas
+                    <ul>
+                        <li><a href="agrupacion_contenido.html" title="Agrupación de Contenido">Agrupación de Contenido</a></li>
+                        <li><a href="contenido_incrustado.html" title="Contenido Incrustado">Contenido Incrustado</a></li>
+                        <li><a href="metadatos.html" title="Metadatos">Metadatos</a></li>
+                        <li><a href="secciones.html" title="Secciones">Secciones</a></li>
+                        <li><a href="semantica_texto.html" title="Semantica Texto">Semantica Texto</a></li>
+                    </ul>
+                </li>
+                <li><a href="../atributos.html" title="Atributos">Atributos</a></li>
+                <li><a href="../comentarios.html" title="Comentarios">Comentarios</a></li>
+                <li><a href="../tablas.html" title="Tablas">Tablas</a></li>
+                <li><a href="../propiedades_css.html" title="Propiedades CSS">Propiedades CSS</a></li>
+            </ul>
+        </div>
+        <div class="contenido">
+            <div style="margin: 50px;">
+                <h1 style="background-color: #142b3b; text-align: center; color: white;">
+                    Etiquetas
+                </h1>
+                <section>
+                    <h2 style="background-color: #e47c5d">Secciones</h2>
+                    <div>
+                        <h3>Body</h3>
+                        <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
                         &lt;body&gt;&lt;/body&gt;
-                    </pre>
-                    Contiene todos los contenidos de un documento HTML, como textos, imágenes, tablas, etc.
-                </div>
-                <hr/>
-                <div>
-                    <h3>Section</h3>
-                    <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
+                    </pre> Contiene todos los contenidos de un documento HTML, como textos, imágenes, tablas, etc.
+                    </div>
+                    <hr/>
+                    <div>
+                        <h3>Section</h3>
+                        <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
                         &lt;section&gt;&lt;/section&gt;
-                    </pre>
-                    Define una sección en un documento.
-                </div>
-                <hr/>
-                <div>
-                    <h3>h1, h2, h3, h4, h5, h6</h3>
-                    <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
+                    </pre> Define una sección en un documento.
+                    </div>
+                    <hr/>
+                    <div>
+                        <h3>h1, h2, h3, h4, h5, h6</h3>
+                        <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
             &lt;h1&gt;Título con h1&lt;/h1&gt;
             &lt;h2&gt;Título con h2&lt;/h2&gt;
             &lt;h3&gt;Título con h3&lt;/h3&gt;
@@ -36,36 +68,40 @@
             &lt;h5&gt;Título con h5&lt;/h5&gt;
             &lt;h6&gt;Título con h6&lt;/h6&gt;
                     </pre>
-                    <div>
-                        <h1>Título con h1</h1>
-                        <h2>Título con h2</h2>
-                        <h3>Título con h3</h3>
-                        <h4>Título con h4</h4>
-                        <h5>Título con h5</h5>
-                        <h6>Título con h6</h6>
+                        <div>
+                            <h1>Título con h1</h1>
+                            <h2>Título con h2</h2>
+                            <h3>Título con h3</h3>
+                            <h4>Título con h4</h4>
+                            <h5>Título con h5</h5>
+                            <h6>Título con h6</h6>
+                        </div>
+                        Define los títulos de un documento HTML, el título con la etiqueta <b style="color: blue;">&lt;h1&gt;&lt;/h1&gt;</b> representa el de mayor importancia, y el título con la etiqueta <b style="color: blue;">&lt;h6&gt;&lt;/h6&gt;</b>                        representa el de menor importancia.
                     </div>
-                    Define los títulos de un documento HTML, el título con la etiqueta <b style="color: blue;">&lt;h1&gt;&lt;/h1&gt;</b> representa el de mayor importancia, y el título con la etiqueta <b style="color: blue;">&lt;h6&gt;&lt;/h6&gt;</b> representa el de menor importancia.
-                </div>
-                <hr/>
-                <div>
-                    <h3>Header</h3>
-                    <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
+                    <hr/>
+                    <div>
+                        <h3>Header</h3>
+                        <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
                 &lt;header&gt;&lt;/header&gt;
-                    </pre>
-                    Define la cabecera de una página, usualmente contiene un logotipo, título del sitio.
-                </div>
-                <hr/>
-                <div>
-                    <h3>Footer</h3>
-                    <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
+                    </pre> Define la cabecera de una página, usualmente contiene un logotipo, título del sitio.
+                    </div>
+                    <hr/>
+                    <div>
+                        <h3>Footer</h3>
+                        <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">
                 &lt;footer&gt;&lt;/footer&gt;
-                    </pre>
-                    Define el pie de página de una página.
-                </div>
-            </section>
-            <br/>
-            <a style="float: left;" href="metadatos.html">Metadatos</a>
-            <a style="float: right;" href="agrupacion_contenido.html">Agrupación de contenido</a>
+                    </pre> Define el pie de página de una página.
+                    </div>
+                </section>
+                <br/>
+                <a style="float: left;" href="metadatos.html">Metadatos</a>
+                <a style="float: right;" href="agrupacion_contenido.html">Agrupación de contenido</a>
+            </div>
         </div>
-    </body>
+    </div>
+    <footer>
+        <p>© 2017 CoderCo.</p>
+    </footer>
+</body>
+
 </html>
