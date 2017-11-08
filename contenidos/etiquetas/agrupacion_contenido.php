@@ -17,7 +17,7 @@
     <div class="pagina">
         <div class="menu">
             <?php
-                include '../menu.php';
+                include '../../menu.php';
             ?>
         </div>
         <div class="contenido">
