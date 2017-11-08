@@ -32,6 +32,7 @@
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/comentarios.php" title="Comentarios">Comentarios</a></li>
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/tablas.php" title="Tablas">Tablas</a></li>
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/propiedades_css.php" title="Propiedades CSS">Propiedades CSS</a></li>
+            <li><a href="<?= get_url()?>/clase_HTML/contenidos/codificacion_url.php ">Codificación URL</a></li>
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/formularios.php ">Formulario</a></li>
         </ul>
         
