@@ -16,26 +16,9 @@
 <body style="font-family: arial; font-size: 20px; background-color: #80c9c6;">
     <div class="pagina">
         <div class="menu">
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="../../index.html" title="Inicio">Inicio</a></li>
-                <li><a href="../estructura_pagina.html" title="Estructura HTML">Estructura HTML</a></li>
-                <li><a href="../elementos.html" title="Elementos">Elementos</a></li>
-                <li>
-                    Etiquetas
-                    <ul>
-                        <li><a href="agrupacion_contenido.html" title="Agrupación de Contenido">Agrupación de Contenido</a></li>
-                        <li><a href="contenido_incrustado.html" title="Contenido Incrustado">Contenido Incrustado</a></li>
-                        <li><a href="metadatos.html" title="Metadatos">Metadatos</a></li>
-                        <li><a href="secciones.html" title="Secciones">Secciones</a></li>
-                        <li><a href="semantica_texto.html" title="Semantica Texto">Semantica Texto</a></li>
-                    </ul>
-                </li>
-                <li><a href="../atributos.html" title="Atributos">Atributos</a></li>
-                <li><a href="../comentarios.html" title="Comentarios">Comentarios</a></li>
-                <li><a href="../tablas.html" title="Tablas">Tablas</a></li>
-                <li><a href="../propiedades_css.html" title="Propiedades CSS">Propiedades CSS</a></li>
-            </ul>
+            <?php
+                include '../../menu.php';
+            ?>
         </div>
         <div class="contenido">
             <div style="margin: 50px;">
