@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <title>Menú</title>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="../javascripts/index.js"></script>
+        <script type="text/javascript" src="<?= get_url()?>/clase_HTML/javascripts/index.js"></script>
     </head>
     <body>
         <?php
@@ -19,8 +19,8 @@
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/estructura_pagina.php" title="Estructura HTML">Estructura HTML</a></li>
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/elementos.php" title="Elementos">Elementos</a></li>
             <li>
-                <div onclick="mostrar_memnu_etiqueta('etiquetas')">Etiquetas</div>
-                <ul class="etiquetas">
+                <div onclick="mostrar_menu_etiqueta('etiquetas')">Etiquetas</div>
+                <ul class="menus-ocultos" id="etiquetas">
                     <li><a href="<?= get_url()?>/clase_HTML/contenidos/etiquetas/agrupacion_contenido.php" title="Agrupación de Contenido">Agrupación de Contenido</a></li>
                     <li><a href="<?= get_url()?>/clase_HTML/contenidos/etiquetas/contenido_incrustado.php" title="Contenido Incrustado">Contenido Incrustado</a></li>
                     <li><a href="<?= get_url()?>/clase_HTML/contenidos/etiquetas/metadatos.php" title="Metadatos">Metadatos</a></li>
@@ -33,7 +33,14 @@
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/tablas.php" title="Tablas">Tablas</a></li>
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/propiedades_css.php" title="Propiedades CSS">Propiedades CSS</a></li>
             <li><a href="<?= get_url()?>/clase_HTML/contenidos/codificacion_url.php ">Codificación URL</a></li>
-            <li><a href="<?= get_url()?>/clase_HTML/contenidos/formularios.php ">Formulario</a></li>
+            <li>
+                <div onclick="mostrar_menu_etiqueta('formularios')">Formulario</div>
+                <ul class="menus-ocultos" id="formularios">
+                    <li><a href="<?= get_url()?>/clase_HTML/contenidos/formularios.php ">Estructura de formulario</a></li>
+                    <li><a href="<?= get_url()?>/clase_HTML/contenidos/formularios/inputs.php" title="Inputs">Tipos de input</a></li>
+                    <li><a href="<?= get_url()?>/clase_HTML/contenidos/formularios/inputs_html5.php" title="Inputs">Input HTML5</a></li>
+                </ul>
+            </li>
         </ul>
         
     </body>
