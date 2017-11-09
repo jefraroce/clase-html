@@ -1,102 +1,80 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Atribulos de HTML</title>
-
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/default.css">
-    <script type="text/javascript" src="../javascripts/highlight.pack.js"></script>
-
-    <script type="text/javascript">
-        hljs.initHighlightingOnLoad();
-    </script>
-</head>
-
-<body style="font-family: arial; font-size: 20px; background-color: #80c9c6;">
-    <div class="pagina">
-        <div class="menu">
-            <?php
-                include '../menu.php';
-            ?>
-        </div>
-        <div class="contenido">
-            <div style="margin: 50px;">
-                <h1 style="background-color: #142b3b; text-align: center; color: white;">
-                    Atributos
-                </h1>
-                <ul>
-                    <li>Todos los elementos HTML pueden tener atributos.</li>
-                    <li>Se deben especificar en la etiqueta de inicio.</li>
-                    <li>Se escriben en pares: nombre="valor"</li>
-                </ul>
-                <section>
+<div class="pagina">
+    <div class="contenido">
+        <div style="margin: 50px;">
+            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+                Atributos
+            </h1>
+            <ul>
+                <li>Todos los elementos HTML pueden tener atributos.</li>
+                <li>Se deben especificar en la etiqueta de inicio.</li>
+                <li>Se escriben en pares: nombre="valor"</li>
+            </ul>
+            <section>
+                <div>
+                    <h3>Href</h3>
                     <div>
-                        <h3>Href</h3>
-                        <div>
-                            <p>
-                                Dentro de este atributo se especifica el enlace donde redirecciona una etiqueta <b>&lt;a&gt;&lt;/a&gt;</b>
-                            </p>
-                            <pre>
+                        <p>
+                            Dentro de este atributo se especifica el enlace donde redirecciona una etiqueta <b>&lt;a&gt;&lt;/a&gt;</b>
+                        </p>
+                        <pre>
                                 <code class="html">
 &lt;a href="http://www.google.com.co" &gt;
     Link Google.
 &lt;/a&gt;
                                 </code>
-                            </pre>
-                            <div>
-                                <a href="http://www.google.com.co">Link Google</a>
-                            </div>
+                        </pre>
+                        <div>
+                            <a href="http://www.google.com.co">Link Google</a>
                         </div>
                     </div>
-                    <hr/>
+                </div>
+                <hr/>
+                <div>
+                    <h3>Src</h3>
                     <div>
-                        <h3>Src</h3>
+                        <p>
+                            Este atributo se puede utilizar en las etiquetas de imagen, video e iframe. <b>&lt;img /&gt;, &lt;iframe&gt;&lt;/iframe&gt;, &lt;video&gt;&lt;/video&gt;</b>
+                        </p>
+                        <pre><code class="html">&lt;img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="100" height="100" /&gt;</code></pre>
                         <div>
-                            <p>
-                                Este atributo se puede utilizar en las etiquetas de imagen, video e iframe. <b>&lt;img /&gt;, &lt;iframe&gt;&lt;/iframe&gt;, &lt;video&gt;&lt;/video&gt;</b>
-                            </p>
-                            <pre><code class="html">&lt;img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="100" height="100" /&gt;</code></pre>
-                            <div>
-                                <img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="100" height="100" />
-                            </div>
+                            <img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="100" height="100" />
                         </div>
                     </div>
-                    <hr/>
+                </div>
+                <hr/>
+                <div>
+                    <h3>Alt</h3>
                     <div>
-                        <h3>Alt</h3>
+                        <p>
+                            Este atributo se usa en la etiqueta de imagen y representa un texto alternativo cuando la imagen no existe. <b>&lt;img /&gt;</b>
+                        </p>
+                        <pre><code class="html">&lt;img src="https://goo.gl/yVKDkRl" alt="Imagen cara feliz" width="100" height="100" /&gt;</code></pre>
                         <div>
-                            <p>
-                                Este atributo se usa en la etiqueta de imagen y representa un texto alternativo cuando la imagen no existe. <b>&lt;img /&gt;</b>
-                            </p>
-                            <pre><code class="html">&lt;img src="https://goo.gl/yVKDkRl" alt="Imagen cara feliz" width="100" height="100" /&gt;</code></pre>
-                            <div>
-                                <img src="https://goo.gl/yVKDkRl" alt="Imagen cara feliz" />
-                            </div>
+                            <img src="https://goo.gl/yVKDkRl" alt="Imagen cara feliz" />
                         </div>
                     </div>
-                    <hr/>
+                </div>
+                <hr/>
+                <div>
+                    <h3>Width y Height</h3>
                     <div>
-                        <h3>Width y Height</h3>
+                        <p>
+                            <b>width:</b> Establece el ancho y <b>height:</b> Establece el alto para los elementos: <b>&lt;img /&gt;, &lt;iframe&gt;&lt;/iframe&gt;, &lt;video&gt;&lt;/video&gt;</b>
+                        </p>
+                        <pre><code class="html">&lt;img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="200" height="200" /&gt;</code></pre>
                         <div>
-                            <p>
-                                <b>width:</b> Establece el ancho y <b>height:</b> Establece el alto para los elementos: <b>&lt;img /&gt;, &lt;iframe&gt;&lt;/iframe&gt;, &lt;video&gt;&lt;/video&gt;</b>
-                            </p>
-                            <pre><code class="html">&lt;img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="200" height="200" /&gt;</code></pre>
-                            <div>
-                                <img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="200" height="200" />
-                            </div>
+                            <img src="https://goo.gl/yVKDkR" alt="Imagen cara feliz" width="200" height="200" />
                         </div>
                     </div>
-                    <hr/>
+                </div>
+                <hr/>
+                <div>
+                    <h3>Class</h3>
                     <div>
-                        <h3>Class</h3>
-                        <div>
-                            <p>
-                                Permite crear un conjunto de etiquetas que forman parte del mismo grupo, este atributo es usado con CSS para aplicar estilos a elementos.
-                            </p>
-                            <pre>
+                        <p>
+                            Permite crear un conjunto de etiquetas que forman parte del mismo grupo, este atributo es usado con CSS para aplicar estilos a elementos.
+                        </p>
+                        <pre>
                                 <code class="html">
 &lt;style type="text/css"&gt; 
     .parrafos{
@@ -110,22 +88,22 @@
 &lt;p class="parrafos" &gt; Párrafo dos &lt;/p&gt;
 &lt;p class="parrafos" &gt; Párrafo tres &lt;/p&gt;
                                 </code>
-                            </pre>
-                            <div>
-                                <p class="parrafos">Párrafo uno</p>
-                                <p class="parrafos">Párrafo dos</p>
-                                <p class="parrafos">Párrafo tres</p>
-                            </div>
+                        </pre>
+                        <div>
+                            <p class="parrafos">Párrafo uno</p>
+                            <p class="parrafos">Párrafo dos</p>
+                            <p class="parrafos">Párrafo tres</p>
                         </div>
                     </div>
-                    <hr/>
+                </div>
+                <hr/>
+                <div>
+                    <h3>Id</h3>
                     <div>
-                        <h3>Id</h3>
-                        <div>
-                            <p>
-                                Permite agregar un nombre como identificador de un elemento, este identificador debe ser único para cada elemento.
-                            </p>
-                            <pre>
+                        <p>
+                            Permite agregar un nombre como identificador de un elemento, este identificador debe ser único para cada elemento.
+                        </p>
+                        <pre>
                                 <code class="html">
 &lt;style type="text/css"&gt; 
     #parrafo_uno{
@@ -139,22 +117,16 @@
 &lt;p id="parrafo_dos" &gt; Párrafo dos &lt;/p&gt;
 &lt;p id="parrafo_tres" &gt; Párrafo tres &lt;/p&gt;
                                 </code>
-                            </pre>
-                            <div>
-                                <p id="parrafo_uno">Párrafo uno</p>
-                                <p id="parrafo_dos">Párrafo dos</p>
-                                <p id="parrafo_tres">Párrafo tres</p>
-                            </div>
+                        </pre>
+                        <div>
+                            <p id="parrafo_uno">Párrafo uno</p>
+                            <p id="parrafo_dos">Párrafo dos</p>
+                            <p id="parrafo_tres">Párrafo tres</p>
                         </div>
                     </div>
-                    <hr/>
-                </section>
-            </div>
+                </div>
+                <hr/>
+            </section>
         </div>
     </div>
-    <footer>
-        <p>© 2017 CoderCo.</p>
-    </footer>
-</body>
-
-</html>
+</div>

@@ -1,41 +1,18 @@
-<?php
-    var_dump($_POST);
-?>
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Formularios</title>
-    <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="stylesheet" href="../../styles/default.css">
-    <script type="text/javascript" src="../../javascripts/highlight.pack.js"></script>
-    <script type="text/javascript">
-        hljs.initHighlightingOnLoad();
-    </script>
-</head>
-
-<body style="font-family: arial; font-size: 20px; background-color: #80c9c6;">
-    <div class="pagina">
-        <div class="menu">
-            <?php
-                include '../../menu.php';
-            ?>
-        </div>
-        <div class="contenido">
-            <div style="margin: 50px;">
-                <h1 style="background-color: #142b3b; text-align: center; color: white;">
-                    Formularios
-                </h1>
-                <section>
+<div class="pagina">
+    <div class="contenido">
+        <div style="margin: 50px;">
+            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+                Formularios
+            </h1>
+            <section>
+                <div>
+                    <h2 style="background-color: #e47c5d">Inputs HTML5</h2>
+                    <h3>Input tipo email</h3>
+                    <p>
+                        Campo especifico para agregar un email.
+                    </p>
                     <div>
-                        <h2 style="background-color: #e47c5d">Inputs HTML5</h2>
-                        <h3>Input tipo email</h3>
-                        <p>
-                            Campo especifico para agregar un email.
-                        </p>
-                        <div>
-                            <pre>
+                        <pre>
                                 <code class="html">
     &lt;form action="inputs_html5.php" method="post" &gt;
         Email
@@ -43,21 +20,118 @@
         &lt;input type="submit" id="enviar" value="Enviar"/&gt;
     &lt;/form&gt;
                                 </code>
-                            </pre>
-                        </div>
-                        <div>
-                            <form action="inputs.php" method="post" >
-                                Email
-                                <input type="email" id="email" name="email" />
-                                <input type="submit" id="enviar" value="Enviar" />
-                            </form>
-                        </div>
-                        <hr/>
+                        </pre>
                     </div>
-                </section>
-            </div>
+                    <div>
+                        <form action="inputs.php" method="post" >
+                            Email
+                            <input type="email" id="email" name="email" />
+                            <input type="submit" id="enviar" value="Enviar" />
+                        </form>
+                    </div>
+                    <hr/>
+                </div>
+                <div>
+                    <h3>Input tipo number</h3>
+                    <p>
+                        Define un campo numeríco, se puede agregar restricciones de sobre se pueden aceptar.
+                    </p>
+                    <div>
+                        <pre>
+                                <code class="html">
+    &lt;form action="inputs_html5.php" method="post" &gt;
+        Escriba un número entre 1 y 3.
+        &lt;input type="number" id="numbero" name="numbero" min="1" max="3" /&gt;
+        &lt;input type="submit" id="enviar" value="Enviar"/&gt;
+    &lt;/form&gt;
+                                </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <form action="inputs.php" method="post" >
+                            Escriba un número entre 1 y 3.
+                            <input type="number" id="numbero" name="numbero" min="1" max="3" />
+                            <input type="submit" id="enviar" value="Enviar" />
+                        </form>
+                    </div>
+                    <hr/>
+                </div>
+                <div>
+                    <h3>Input tipo rango</h3>
+                    <p>
+                        Denife un campo de rango, cuyo valor exacto no es importante, este campo agrega un control deslizante, el rango predeterminado es de 0 a 100, pero al igual que el campo numeríco, se pueden establecer restricciones.
+                    </p>
+                    <div>
+                        <pre>
+                                <code class="html">
+    &lt;form action="inputs_html5.php" method="post" &gt;
+        Seleccione un rango entre 1 y 20.
+        &lt;input type="range" id="rango" name="rango" min="1" max="20" /&gt;
+        &lt;input type="submit" id="enviar" value="Enviar"/&gt;
+    &lt;/form&gt;
+                                </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <form action="menu.php" method="post" >
+                            Seleccione un rango entre 1 y 20.
+                            <input type="range" id="rango" name="rango" min="1" max="20" />
+                            <input type="submit" id="enviar" value="Enviar" />
+                        </form>
+                    </div>
+                    <hr/>
+                </div>
+                <div>
+                    <h3>Input tipo teléfono</h3>
+                    <p>
+                        Denife un campo cuyo valor es un número telefónico.
+                    </p>
+                    <div>
+                        <pre>
+                                <code class="html">
+    &lt;form action="inputs_html5.php" method="post" &gt;
+        Seleccione un rango entre 1 y 20.
+        &lt;input type="range" id="rango" name="rango" min="1" max="20" /&gt;
+        &lt;input type="submit" id="enviar" value="Enviar"/&gt;
+    &lt;/form&gt;
+                                </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <form action="menu.php" method="post" >
+                            Escriba su número de celular:
+                            <input type="tel" id="telefono" name="telefono" />
+                            <input type="submit" id="enviar" value="Enviar" />
+                        </form>
+                    </div>
+                    <hr/>
+                </div>
+                <div>
+                    <h3>Input tipo fecha</h3>
+                    <p>
+                        Denife un campo para ingresar una fecha.
+                    </p>
+                    <div>
+                        <pre>
+                                <code class="html">
+    &lt;form action="inputs_html5.php" method="post" &gt;
+        Ingrese una fecha:
+        &lt;input type="date" id="fecha" name="fecha" /&gt;
+        &lt;input type="submit" id="enviar" value="Enviar"/&gt;
+    &lt;/form&gt;
+                                </code>
+                        </pre>
+                    </div>
+                    <div>
+                        <form action="inputs_html5.php" method="post" >
+                            Ingrese una fecha:
+                            <input type="date" id="fecha" name="fecha" max="1989-12-31" min="2005-12-31" />
+                            <input type="submit" id="enviar" value="Enviar" />
+                        </form>
+                    </div>
+                    <hr/>
+                </div>
+            </section>
         </div>
     </div>
-</body>
-
-</html>
+</div>
