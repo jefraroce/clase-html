@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Calculadora - CoderCo</title>
+    <style>
+        button {
+            width: 100%;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <input style="text-align: right;" type="text" id="pre-operacion" disabled />
+                </th>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    <input style="text-align: right;" type="text" id="resultado" readonly />
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4"><button onclick="limpiar();">Limpiar</button></td>
+            </tr>
+            <tr>
+                <td><button class="numero">7</button></td>
+                <td><button class="numero">8</button></td>
+                <td><button class="numero">9</button></td>
+                <td><button class="operador">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="numero">4</button></td>
+                <td><button class="numero">5</button></td>
+                <td><button class="numero">6</button></td>
+                <td><button class="operador">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="numero">1</button></td>
+                <td><button class="numero">2</button></td>
+                <td><button class="numero">3</button></td>
+                <td><button class="operador">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="numero">0</button></td>
+                <td colspan="2"><button id="igual">=</button></td>
+                <td><button class="operador">+</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        // Variables de la operación
+        var valor1 = 0;
+        var valor2 = 0;
+        var operador = '';
+
+        // Input de pre-operacion
+        var input_pre_operacion = document.getElementById('pre-operacion');
+
+        // Input de operaciones
+        var input_resultado = document.getElementById('resultado');
+
+        // Creación de funciones
+
+        /**
+         * Esta función limpia todas las variables y inputs de la calculadora.
+         * @return void
+         */
+        function limpiar() {
+            input_pre_operacion.value = '';
+            input_resultado.value = '';
+            valor1 = 0;
+            valor2 = 0;
+            operador = '';
+        }
+
+        /**
+         * Esta función calcula un resultado dados dos valores enteros y un operador.
+         * @param {Number} valor1
+         * @param {Number} valor2
+         * @param {String} operador, solo funciona con +, -, / y *
+         * @return {Number} Resultado de la operación.
+         */
+        function calcular(valor1, valor2, operador) {
+            switch (operador) {
+                case '+':
+                    return valor1 + valor2;
+                case '-':
+                    return valor1 - valor2;
+                case '/':
+                    return valor1 / valor2;
+                case '*':
+                    return valor1 * valor2;
+            }
+        }
+
+        // Botones numericos
+        var botones_de_numeros = document.querySelectorAll('button.numero');
+
+        // Agregando un escuchador del evento click a los botones numericos
+        botones_de_numeros.forEach(function(boton) {
+            boton.addEventListener('click', function() {
+                input_resultado.value = input_resultado.value + this.innerHTML;
+            });
+        });
+
+        // Botones de operaciones
+        var botones_operadores = document.querySelectorAll('button.operador');
+
+        // Agregando un escuchador del evento click a los botones de operaciones
+        botones_operadores.forEach(function(boton) {
+            boton.addEventListener('click', function() {
+                // Guardamos el primer valor y el operador
+                valor1 = parseInt(input_resultado.value);
+                operador = this.innerHTML;
+
+                // Actualizamos los inputs
+                input_pre_operacion.value = input_resultado.value + ' ' + this.innerHTML;
+                input_resultado.value = '';
+            });
+        });
+
+        // Botones numericos
+        document.getElementById('igual').addEventListener('click', function() {
+            // Almacenamos el segundo valor
+            valor2 = parseInt(input_resultado.value);
+
+            // Ejecutamos el calculo
+            var resultado = calcular(valor1, valor2, operador);
+
+            // Limpiamos los inpust y mostramos el resultado
+            input_pre_operacion.value = '';
+            input_resultado.value = resultado;
+        });
+    </script>
+
+    <footer style="text-align: center;">
+        © 2017 CoderCo.
+    </footer>
+</body>
+
+</html>

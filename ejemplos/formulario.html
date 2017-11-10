@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro - CoderCo</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro</h1>
+    <form method="GET">
+        <label for="nombres">Nombres: </label>
+        <input type="text" name="nombres" />
+        <br/>
+        <br/>
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" />
+        <br/>
+        <br/>
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" /> # Años
+        <br/>
+        <br/>
+        <label for="correo">Corre Electronico: </label>
+        <input type="email" name="correo" />
+        <br/>
+        <br/>
+        <label for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" />
+        <br/>
+        <br/>
+        <label for="contrasena">Contraseña: </label>
+        <input type="password" name="contrasena" />
+        <br/>
+        <br/>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+    </form>
+
+    <hr/>
+
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+
+    <script type="text/javascript">
+        // Obtenemos la url actual
+        var url_string = window.location.href;
+
+        // La variable anterior la convertimos a URL
+        var url = new URL(url_string);
+
+        // Usando los metodos searchParams y get obtenemos los valores enviados por le metodo GET
+        var parametros = url.searchParams;
+
+        if (parametros != undefined) {
+            document.getElementById('resultado').innerHTML = `<table><thead><tr><th>Nombres</th><th>Apellidos</th><th>Edad</th><th>Correo</th><th>Telefono</th><th>Contraseña</th></tr></thead><tbody><tr><td>${parametros.get('nombres')}</td><td>${parametros.get('apellidos')}</td><td>${parametros.get('edad')}</td><td>${parametros.get('correo')}</td><td>${parametros.get('telefono')}</td><td>${parametros.get('contrasena')}</td></tr></tbody></table>`;
+        }
+    </script>
+
+    <footer style="text-align: center;">
+        © 2017 CoderCo.
+    </footer>
+</body>
+
+</html>

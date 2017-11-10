@@ -9,10 +9,8 @@
         <link href="styles/bootstrap.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="javascripts/index.js"></script>
-        <script type="text/javascript" src="javascripts/bootstrap.js" ></script>
         <script type="text/javascript" src="javascripts/bootstrap.min.js" ></script>
         <script type="text/javascript" src="javascripts/bootstrap.bundle.min.js" ></script>
-        <script type="text/javascript" src="javascripts/bootstrap.bundle.js" ></script>
         <script type="text/javascript" src="javascripts/highlight.pack.js" ></script>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/default.css">
@@ -228,8 +226,9 @@
                 </div>
             </div>
         </div>
+        <footer style="text-align: center;" >
+            © 2017 CoderCo.
+        </footer>
     </body>
-    <footer style="text-align: center;" >
-        © 2017 CoderCo.
-    </footer>
+    
 </html>
