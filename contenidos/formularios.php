@@ -2,7 +2,7 @@
     <div class="contenido">
         <div style="margin: 50px;">
             <section>
-                <h1 style="background-color: #142b3b; text-align: center; color: white;">
+                <h1 class="title-pages">
                     Formularios
                 </h1>
                 <div>
@@ -35,7 +35,7 @@
 
                 <hr/>
 
-                <h3 style="background-color: #e47c5d">Action</h3>
+                <h2 class="sub-title">Action</h2>
                 <div>
                     Es la acción que se realizará al momento de dar clic en el botón <strong>Enviar</strong>
                 </div>
@@ -45,7 +45,7 @@
 
                 <hr/>
 
-                <h3 style="background-color: #e47c5d">Method</h3>
+                <h2 class="sub-title">Method</h2>
                 <div>
                     Es el atributo donde  se especifica el metodo HTTP (GET o POST) usado para enviar los datos del formulario.
                 </div>

@@ -1,7 +1,7 @@
 <div class="pagina">
     <div class="contenido">
         <div style="margin: 50px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+            <h1 class="title-pages">
                 Comentarios
             </h1>
             <p>

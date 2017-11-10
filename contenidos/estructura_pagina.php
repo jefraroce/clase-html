@@ -2,7 +2,7 @@
     <div class="contenido">
         <div style="margin: 50px;">
             <section>
-                <h1 style="background-color: #142b3b; text-align: center; color: white;">
+                <h1 class="title-pages">
                     Estructura de una p&aacute;gina
                 </h1>
                 <div>
