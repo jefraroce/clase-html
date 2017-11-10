@@ -1,14 +1,14 @@
 <div class="pagina">
     <div class="contenido">
         <div style="margin: 50px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+            <h1 class="title-pages">
                 Propiedades CSS
             </h1>
             <p>
                 CSS permite cambiar la apariencia de una página web.
             </p>
             <section>
-                <h2 style="background-color: #e47c5d">Texto</h2>
+                <h2 class="sub-title">Texto</h2>
                 <div>
                     <h3>Color texto</h3>
                     <p>
@@ -60,7 +60,7 @@
                 </div>
             </section>
             <section>
-                <h2 style="background-color: #e47c5d">Fondos</h2>
+                <h2 class="sub-title">Fondos</h2>
                 <div>
                     <h3>Background-color</h3>
                     Permite cambiar el tamaño del texto.
@@ -92,7 +92,7 @@
                 <hr/>
             </section>
             <section>
-                <h2 style="background-color: #e47c5d">Margen</h2>
+                <h2 class="sub-title">Margen</h2>
                 <div>
                     <h3>Maging-left</h3>
                     <p>

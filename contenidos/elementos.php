@@ -2,7 +2,7 @@
     <div class="contenido">
         <div style="margin: 50px;">
             <section>
-                <h1 style="background-color: #142b3b; text-align: center; color: white;">
+                <h1 class="title-pages">
                     Elementos
                 </h1>
                 Son partes que componen los documentos HTML, un elemento HTML esta conformado por:
@@ -16,7 +16,7 @@
             </section>
             <hr/>
             <section>
-                <h1 style="background-color: #142b3b; text-align: center; color: white;">
+                <h1 class="title-pages">
                     Elementos anidados
                 </h1>
                 <div>

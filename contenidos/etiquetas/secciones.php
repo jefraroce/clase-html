@@ -1,11 +1,11 @@
 <div class="pagina">
     <div class="contenido">
         <div style="margin: 50px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+            <h1 class="title-pages">
                 Etiquetas
             </h1>
             <section>
-                <h2 style="background-color: #e47c5d">Secciones</h2>
+                <h2 class="sub-title">Secciones</h2>
                 <div>
                     <h3>Body</h3>
                     <pre style="color: blue; border: 1px solid black; background-color: #E6E6E6; ">

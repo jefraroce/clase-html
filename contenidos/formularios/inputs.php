@@ -1,12 +1,12 @@
 <div class="pagina">
     <div class="contenido">
         <div style="margin: 50px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+            <h1 class="title-pages">
                 Formularios
             </h1>
             <section>
                 <div>
-                    <h2 style="background-color: #e47c5d">Tipos de input</h2>
+                    <h2 class="sub-title">Tipos de input</h2>
                     <h3>Input tipo text</h3>
                     <p>
                         Permite agregar texto de línea simple, los saltos de línea son eliminados automáticamente.

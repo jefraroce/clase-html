@@ -24,3 +24,33 @@
     background-color: blue;
     font-size: 20px;
 }
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link.active, .dropdown-item.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: white !important;
+  background-color: rgb(0, 150, 136) !important;
+  border: 1px solid rgb(0, 150, 136) !important;
+}
+
+.dropdown-menu{
+    background-color: rgb(76, 175, 80) !important;
+}
+
+.title-pages{
+    background-color: rgb(0, 150, 136); 
+    text-align: center; 
+    color: white;
+}
+
+.sub-title{
+    background-color: rgb(121, 85, 72); 
+    color: white;
+}
+
+.html{
+    border: 2px solid;
+}

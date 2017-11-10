@@ -1,7 +1,7 @@
 <div class="pagina">
     <div class="contenido">
         <div style="margin: 50px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+            <h1 class="title-pages">
                 Codificación URL
             </h1>
             <p>
@@ -22,8 +22,8 @@
                 </pre>
             </div>
 
-            <table>
-                <thead>
+            <table class="table">
+                <thead class="thead-dark">
                     <tr>
                         <th>Protocolo</th>
                         <th style="width: 280px;" >Servidor</th>
@@ -56,11 +56,11 @@
                     </tr>
                 </tbody>
             </table>
+            <br/>
+            <h2 class="sub-title">Protocolos comunes de URL</h2>
 
-            <h2 style="background-color: #e47c5d">Protocolos comunes de URL</h2>
-
-            <table>
-                <thead>
+            <table class="table">
+                <thead class="thead-dark">
                     <tr>
                         <th>Protocolo</th>
                         <th>Significado</th>

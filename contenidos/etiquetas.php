@@ -6,11 +6,11 @@
     </div>
     <div class="contenido">
         <div style="margin: 50px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+            <h1 class="title-pages">
                 Etiquetas
             </h1>
             <section>
-                <h2 style="background-color: #e47c5d">Elementos de ra&iacute;z</h2>
+                <h2 class="sub-title">Elementos de ra&iacute;z</h2>
                 <div>
                     <h3>!DOCTYPE html</h3>
                     <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre> Es el primer elemento que se agrega en un documento HTML, sirve para decirle al navegador la versi&oacute;n de HTML que se va a usar.

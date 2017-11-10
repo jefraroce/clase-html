@@ -1,12 +1,12 @@
 <div class="pagina">
     <div class="contenido">
         <div style="margin: 50px;">
-            <h1 style="background-color: #142b3b; text-align: center; color: white;">
+            <h1 class="title-pages">
                 Formularios
             </h1>
             <section>
                 <div>
-                    <h2 style="background-color: #e47c5d">Inputs HTML5</h2>
+                    <h2 class="sub-title">Inputs HTML5</h2>
                     <h3>Input tipo email</h3>
                     <p>
                         Campo especifico para agregar un email.
